@@ -35,9 +35,7 @@ div>p:first-child {
     box-sizing: border-box;
 }
 
-div img {
-    background: black;
-}
+
 
 .botao-amarelo {
     background-color: #ffaf43;
