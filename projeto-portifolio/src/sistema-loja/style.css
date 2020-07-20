@@ -1,0 +1,49 @@
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        line-height: 110%;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: #444;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+
+    p {
+        margin: 8px 0;
+    }
+    
+    a {
+        color: #333;
+    }
+
+    a:hover {
+        color: #333;
+    }
+
+    a:focus {
+        outline: 0;
+    }
+
+    a.link-color {
+        color: #e74c3c;
+    }
+    
+    a.link-color:hover {
+        color: #e74c3c;
+    }
+
+    img{
+        width: 40px;;
+    }
