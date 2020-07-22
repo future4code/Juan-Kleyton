@@ -1,0 +1,63 @@
+sapo{
+    /* nivel 1 */
+justify-content: flex-end;
+/* nivel 2 */
+justify-content: center;
+/* nivel 3 */
+justify-content: space-around;
+/* nivel 4 */
+justify-content: space-between;
+/* nivel 5 */
+align-items: flex-end;
+/* nivel 6 */
+justify-content : center;
+align-items: center;
+/* nivel 7 */
+justify-content: space-around;
+align-items: flex-end;
+/* nivel 8 */
+flex-direction: row-reverse;
+/* nivel 9 */
+flex-direction: column;
+/* nivel 10 */
+flex-direction: row-reverse;
+justify-content: flex-end;
+/* nivel 11 */
+flex-direction : column;
+justify-content: flex-end;
+/* nivel 12 */
+flex-direction: column-reverse;
+justify-content: space-between;
+/* nivel 13 */
+flex-direction : row-reverse;
+justify-content : center;
+align-items: flex-end;
+/* nivel 14 */
+order: 2;
+/* nivel 15 */
+order: -5;
+/* nivel 16 */
+align-self: flex-end;
+/* nivel 17 */
+order: 1;
+align-self: flex-end;
+/* nivel 18 */
+flex-wrap: wrap;
+/* nivel 19 */
+flex-direction: column;
+flex-wrap: wrap;
+/* nivel 20 */
+flex-flow: column wrap;
+/* nivel 21 */
+align-content: flex-start;
+/* nivel 22 */
+align-content: flex-end;
+/* nivel 23 */
+flex-direction: column-reverse;
+align-content: center;
+/* nivel 24 */
+flex-flow:column-reverse wrap-reverse;
+justify-content:center;
+align-content:space-between
+
+}
