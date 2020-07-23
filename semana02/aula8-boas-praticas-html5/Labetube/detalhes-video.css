@@ -1,0 +1,57 @@
+article {
+    display: grid;
+    justify-content: center;
+}
+
+h3 {
+    margin-bottom: 16px;
+}
+
+video {
+    width: 50vw;
+    box-shadow: 1px 1px 5px #000000;
+}
+
+.descricao {
+    margin-top: 16px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 900px) {
+    video {
+        width: 65vw;
+    }
+}
+@media screen and (max-width: 800px) {
+    video {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    video {
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    video {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    video {
+        width: 85vw;
+    }
+
+    header input{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width : 450px) {
+    video {
+        width: 100vw;
+    }
+}
