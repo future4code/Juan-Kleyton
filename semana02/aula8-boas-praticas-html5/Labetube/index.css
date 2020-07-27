@@ -1,0 +1,43 @@
+img{
+    width: 100px;
+    height: 40px;
+}
+
+
+video {
+    max-width: 100%;
+}
+
+main {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+p {
+    padding: 8px;
+}
+
+
+@media screen and (max-width: 800px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width : 420px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
