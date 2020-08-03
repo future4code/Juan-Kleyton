@@ -36,6 +36,6 @@ if (confirm ("Computador: Posso iniciar o jogo?")){
          console.log ("Computador: 404 error, essa mensagem é um erro, nunca deveria ser exibida")
    }
       }  else {
-         console.log ("Computador: Você é muito ffraco para continuar! LUSEEEER")
+         console.log ("Computador: Você é muito fraco para continuar! LUSEEEER")
       }
    
