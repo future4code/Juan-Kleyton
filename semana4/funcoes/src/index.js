@@ -50,5 +50,82 @@
 //        const imprimir = somarDoisNumeros ( 3,2)
 
 //c)
+    
+// function imprime10vezes(mensagem) {
+//     for (let i = 0; i < 10; i++) {
+//         console.log(mensagem)
+//     }
+// }
+
+// imprime10vezes("10 vezes")
+
+
+//6-
+// a)
+// const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
+
+// function verificaElementos(arrayElementos) {
+//     return arrayElementos.length
+// }
+// console.log(verificaElementos(array))
+
+
+// b)
+// function verificaPar(numero) {
+//     if (numero % 2 === 0) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+
+// console.log(verificaPar(1))
+// console.log(verificaPar(2))
+
+
+// c)
+
+// const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
+// function verificaParesArray(arrayNumeros) {
+//     let quantidadeDePares = 0
+
+//     for (let elemento of arrayNumeros) {
+//         if (elemento % 2 === 0) {
+//             quantidadeDePares++
+//         }
+//     }
+
+//     return quantidadeDePares
+// }
+
+// console.log(verificaParesArray(array))
+
+
+
+// d.
+
+// function verificaPar(numero) {
+//     if (numero % 2 === 0) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+
+// const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
+// function verificaQuatidadeDeParesDoArray(arrayDeNumeros) {
+//     let arrayDePares = []
+
+//     for (let elemento of arrayDeNumeros) {
+//         if (verificaSeEhPar(elemento)) {
+//             arrayDePares.push(elemento)
+//             //console.log(arrayDePares)
+//         }
+//     }
+
+//     return arrayDePares.length
+// }
+
+// console.log(verificaQuatidadeDeParesDoArray(array))
 
 
