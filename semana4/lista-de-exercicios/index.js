@@ -1,4 +1,4 @@
-// Interpretação de Código
+// Exercicio Interpretação de Código
 
 /*
 01- Cria uma função chamada "conversorDeMoeda" para parametro "Valor em dolar", após
@@ -53,10 +53,100 @@ imprime o valor de 100 dolares * a cotação informada pelo usuário em reais
         se o indice numero for maior que 0, variavel numero2 = ao indice "numero"
 
         imprime todo o array pois todos os indices são menos que infinito
-        imprime todo o array pois todos os indices são maiores que 0
+        imprime todo o array pois todos os indices são maiores que 0      
 */
-
+    //Exercícios de Lógica de Programação
 /*
+01 - 
+        //while
+
+                // let numeroDigitado
+                // let soma = 0
+
+                // while (numeroDigitado !== 0) {
+                // numeroDigitado = Number(prompt("Digite um número (0 para a execução):"))
+                // soma += numeroDigitado
+                // }
+                // console.log(soma)
+
+        //for 
+
+        //         for (let i = 0; i <= 10; i++) {
+        //         if (i % 2 === 0) {
+        //         console.log(`${i} é par`)
+        //         } else {
+        //         console.log(`${i} é ímpar`)
+        //     }
+        // }
+
+        //for of 
+
+            //     let palavras = ["Oi", "sumida", "tudo", "bem?", "Sdds"]
+            //     let mensagem = ""
+            //     let impares = []
+
+            //     for (let palavra of palavras) {
+            //     mensagem += palavra + " "
+            //     }
+
+            // console.log(mensagem)
+
+
+    //02
+        // false
+        // false
+        // true
+        // true
+        // true
+
+    03- 
+        // Não funciona pq o código entra em loop infinito, faltou o incrimentar o contador (i) chegar a um resultado, retirar o = da condição para poder chega a um numero par igual a 0 
+
+                function quantidadeDeNumerosPares(N){
+                for(let i = 0; i < N; i++){
+                console.log(i*2)
+                }
+            }
+                quantidadeDeNumerosPares(3)
+
+    //04- 
+        //     function verificaTriangulo() {
+        //     let lado1 = prompt("Digite o primeiro lado do triangulo:")
+        //     let lado2 = prompt("Digite o segundo lado do triangulo:")
+        //     let lado3 = prompt("Digite o terceiro lado do triangulo:")
+        //     if (lado1 === lado2 && lado1 === lado3 ) {
+        //     console.log(`Triangulo Equilátero`)
+        //     }
+        //     else if ((lado1  === lado2 && lado1 !== lado3) || (lado1 === lado3 && lado1 !== lado2) || (lado2 === lado3 && lado2 !== lado1) )
+        //     console.log(`Triangulo Isosceles`)
+  
+        //     else {
+        //     console.log(`Triangulo Escaleno`)
+        //     } 
+        // }
+        //     verificaTriangulo()
+
+    //5-    
+                // function MDD(a, b){
+            
+                //     if(a > b){
+                // console.log(`O maior é: ${a}`)
+                // }else
+                // if(b > a){
+                // console.log(`O maior é: ${b}`)
+                // }
+                // else{console.log('São iguais!')}
+
+                // if(a % b === 0){
+                // onsole.log(`${a} é divisível por ${b}`)
+                // }else{console.log(`${a} não é divisível por ${b}`)}
+                // if(b % a === 0){
+                // console.log(`${b} é divisível por ${a}`)
+                // }else{console.log(`${b} não é divisível por ${a}`)}
+
+                // console.log(`A diferença entre eles é ${eh.abs(a - b)}`)
+                // }
+                //     MDD(15, 30)
 
 */
 /*
