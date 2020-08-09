@@ -147,11 +147,53 @@ imprime o valor de 100 dolares * a cotação informada pelo usuário em reais
                 // console.log(`A diferença entre eles é ${eh.abs(a - b)}`)
                 // }
                 //     MDD(15, 30)
+                */
+               // Exercicios Funções
+        /*
+    //         1- 
+    //         function funcaoArray(array) {
+    //         let numeroMaior = Infinity;
+    //         let numeroMenor = 0;
+    //         for (let numero of array) {
+    //         if (numero < numeroMaior) {
+    //         numeroMaior = numero
+    //         }
+    //         if (numero > numeroMenor) {
+    //         numeroMenor = numero;
+    //     }
+    // }
+    //         console.log(array, numeroMenor, numeroMaior)
+    //         let segundoNumeroMenor = 0;
+    //         let segundoNumeroMaior = Infinity;
+    //         for (let numero of array) {
+    //         if (numero !== numeroMaior) {
+    //         if (numero < segundoNumeroMaior) {
+    //             segundoNumeroMaior = numero
+    //         }
+    //     }
+    //         if (numero !== numeroMenor) {
+    //         if (numero > segundoNumeroMenor) {
+    //             segundoNumeroMenor = numero;
+    //         }
+    //     }
+    // }
+    //      console.log(array, segundoNumeroMenor, segundoNumeroMaior)
 
-*/
-/*
+            
+    //         let array = []
+    //         for (i = 0; i < 21; i++) {
+    //         array.push(Math.floor(Math.random() * 100))
+    //     }
+    //         funcaoArray(array)
 
-*/
+        2- let msg = function () {
+           window.alert("Hello Future4")
+           return msg
+        }
+            msg()
+
+
+        */
 /*
 
 */
