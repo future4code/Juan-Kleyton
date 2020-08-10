@@ -194,9 +194,60 @@ imprime o valor de 100 dolares * a cotação informada pelo usuário em reais
 
 
         */
+                //Exercicio Objetos
 /*
+        // 1- Os arrays são iguais as listas, eles armazenam itens, sejam objeitos, variáveis, numeros, etc.
+        // podem ser utilizados quando queremos agupar doados que possuem classificação/tipo, como por exemplo, carros, comidas,etc.
+        // Já os objetos são blocos de dados que juntos formam uma informaçao, pode possui classe, atributo e metodo.
+        // Os atributos são identificados com uma chave e um 
+        // valor. Os objetos se diferem das arrays quando observamos o agrupamento dos dados,
+        // os itens de uma array não tem relações diretas (exceto as posições), já nos objetos,
+        // cada atributo faz parte do objeto e depende da sua existência para fazer sentido 
+        // como informação.
 
-*/
+        2- 
+            // function criarRetangulo(lado1, lado2){
+            // let retangulo = {
+            // lado1: (base),
+            // lado2: (altura),
+            // perimetro: (lado1+lado2)*2,
+            // area: (lado1*lado2)
+            //  }
+            // console.log(retangulo)
+            //     }
+            // criarRetangulo(4, 5)
+
+    3-  
+        const filme = {
+        titulo: "Guardians of the Galaxy Vol. 2",
+        ano: 2017,
+        diretor: "James Gunn",
+        elenco: ["Chris Pratt", "Zoë Saldaña", "Dave Batista", "Vin Diesel","Bradley Cooper", "Michael Rooker","Karen Gillan","Pom Klementieff,"Elizabeth Debicki"]
+        }
+        let arrayElenco = []
+        for (let nome of filme.elenco){
+        arrayElenco += nome + ", "
+        }
+        console.log(`Venha assistir ao filme ${filme.titulo}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${arrayElenco}`)
+    
+    
+        4- 
+            let pessoa = {
+            nome: "Juan Albuquerque", 
+            idade: 28,
+            email: "email@emai.com",
+            endereco: "p sherman, 42,wallaby way sydney"
+            }
+            function anonimizarPessoa(objeto){
+            let anonimo = {
+                ...pessoa,
+            nome: "ANONIMO"
+            }
+            console.log(anonimo) 
+            }
+            anonimizarPessoa(pessoa)
+            */
+
 /*
 
 */
