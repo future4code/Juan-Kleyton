@@ -1,0 +1,265 @@
+// Exercicio Interpretação de Código
+
+/*
+01- Cria uma função chamada "conversorDeMoeda" para parametro "Valor em dolar", após
+um variável chamada "Cotação", onde pede ao usuário que digite a cotação do dolar, retorna
+o valorEmdolar * cotação
+após cria um variavel "Meu Dinheiro" e atribui um valor 100 ao "conversorDeMoeda"
+imprime o valor de 100 dolares * a cotação informada pelo usuário em reais
+
+*/
+
+
+/*
+02- Cria um função InvesteDinheiro que recebe 2 parametros "tipoDeInvestimento" e "Valor"
+    depois cria uma variavel chamada "valorAposInvestimento"
+    Cria um switch com os seguintes casos: 
+    "Poupança" que recebe a váriável ValorAposInvestimento = valor * 1.03
+    "RendaFixa" que recebe a váriável ValorAposInvestimento = valor * 1.05
+    "CDB" que recebe a váriável ValorAposInvestimento = valor * 1.06
+    "Ações" que recebe a váriável ValorAposInvestimento = valor * 1.1
+    caso não for escolhido esses caso, retorna um alerta "Tipo de investimento informado incorreto"
+    retorna valorAposInvestimento
+    Cria duas váriaveis novoMontante que recebe açoes com valor 150 
+    e SegundoMontante que recebe "Tesouro Direito" com valor 200
+
+    Imprime novoMontate que será igual a 150 * 1.1
+    Imprime segundoMontate que receberá o Alert "Tipo de investimento informado incorreto"
+
+*/
+
+/*
+    03- Cria um constante "numero" que recebe um array de numeros
+        cria uma contate "array1" que recebe um array vazio
+        cria uma costante "array2" que recebe um array vazio 
+
+        se a divisao dos indices por 2 resultar em resto 0
+        Coloca o numero no array1
+        se não
+        coloca o numero no array2
+
+        imprime a quantidade de indices no array numeros
+        imprime a quantidade de indices no array1
+        imprime a quantidade de indices no array2
+*/
+
+
+/*
+    4- cria uma constante "Numero" com um array com 26 indices
+        uma variavel numero1 que recebe infinity
+        uma variavel numero2 que recebe 0
+
+        se o indice numero for menor que infinito, variavel numero1 = ao indice "numero
+        se o indice numero for maior que 0, variavel numero2 = ao indice "numero"
+
+        imprime todo o array pois todos os indices são menos que infinito
+        imprime todo o array pois todos os indices são maiores que 0      
+*/
+    //Exercícios de Lógica de Programação
+/*
+01 - 
+        //while
+
+                // let numeroDigitado
+                // let soma = 0
+
+                // while (numeroDigitado !== 0) {
+                // numeroDigitado = Number(prompt("Digite um número (0 para a execução):"))
+                // soma += numeroDigitado
+                // }
+                // console.log(soma)
+
+        //for 
+
+        //         for (let i = 0; i <= 10; i++) {
+        //         if (i % 2 === 0) {
+        //         console.log(`${i} é par`)
+        //         } else {
+        //         console.log(`${i} é ímpar`)
+        //     }
+        // }
+
+        //for of 
+
+            //     let palavras = ["Oi", "sumida", "tudo", "bem?", "Sdds"]
+            //     let mensagem = ""
+            //     let impares = []
+
+            //     for (let palavra of palavras) {
+            //     mensagem += palavra + " "
+            //     }
+
+            // console.log(mensagem)
+
+
+    //02
+        // false
+        // false
+        // true
+        // true
+        // true
+
+    03- 
+        // Não funciona pq o código entra em loop infinito, faltou o incrimentar o contador (i) chegar a um resultado, retirar o = da condição para poder chega a um numero par igual a 0 
+
+                function quantidadeDeNumerosPares(N){
+                for(let i = 0; i < N; i++){
+                console.log(i*2)
+                }
+            }
+                quantidadeDeNumerosPares(3)
+
+    //04- 
+        //     function verificaTriangulo() {
+        //     let lado1 = prompt("Digite o primeiro lado do triangulo:")
+        //     let lado2 = prompt("Digite o segundo lado do triangulo:")
+        //     let lado3 = prompt("Digite o terceiro lado do triangulo:")
+        //     if (lado1 === lado2 && lado1 === lado3 ) {
+        //     console.log(`Triangulo Equilátero`)
+        //     }
+        //     else if ((lado1  === lado2 && lado1 !== lado3) || (lado1 === lado3 && lado1 !== lado2) || (lado2 === lado3 && lado2 !== lado1) )
+        //     console.log(`Triangulo Isosceles`)
+  
+        //     else {
+        //     console.log(`Triangulo Escaleno`)
+        //     } 
+        // }
+        //     verificaTriangulo()
+
+    //5-    
+                // function MDD(a, b){
+            
+                //     if(a > b){
+                // console.log(`O maior é: ${a}`)
+                // }else
+                // if(b > a){
+                // console.log(`O maior é: ${b}`)
+                // }
+                // else{console.log('São iguais!')}
+
+                // if(a % b === 0){
+                // onsole.log(`${a} é divisível por ${b}`)
+                // }else{console.log(`${a} não é divisível por ${b}`)}
+                // if(b % a === 0){
+                // console.log(`${b} é divisível por ${a}`)
+                // }else{console.log(`${b} não é divisível por ${a}`)}
+
+                // console.log(`A diferença entre eles é ${eh.abs(a - b)}`)
+                // }
+                //     MDD(15, 30)
+                */
+               // Exercicios Funções
+        /*
+    //         1- 
+    //         function funcaoArray(array) {
+    //         let numeroMaior = Infinity;
+    //         let numeroMenor = 0;
+    //         for (let numero of array) {
+    //         if (numero < numeroMaior) {
+    //         numeroMaior = numero
+    //         }
+    //         if (numero > numeroMenor) {
+    //         numeroMenor = numero;
+    //     }
+    // }
+    //         console.log(array, numeroMenor, numeroMaior)
+    //         let segundoNumeroMenor = 0;
+    //         let segundoNumeroMaior = Infinity;
+    //         for (let numero of array) {
+    //         if (numero !== numeroMaior) {
+    //         if (numero < segundoNumeroMaior) {
+    //             segundoNumeroMaior = numero
+    //         }
+    //     }
+    //         if (numero !== numeroMenor) {
+    //         if (numero > segundoNumeroMenor) {
+    //             segundoNumeroMenor = numero;
+    //         }
+    //     }
+    // }
+    //      console.log(array, segundoNumeroMenor, segundoNumeroMaior)
+
+            
+    //         let array = []
+    //         for (i = 0; i < 21; i++) {
+    //         array.push(Math.floor(Math.random() * 100))
+    //     }
+    //         funcaoArray(array)
+
+        2- let msg = function () {
+           window.alert("Hello Future4")
+           return msg
+        }
+            msg()
+
+
+        */
+                //Exercicio Objetos
+/*
+        // 1- Os arrays são iguais as listas, eles armazenam itens, sejam objeitos, variáveis, numeros, etc.
+        // podem ser utilizados quando queremos agupar doados que possuem classificação/tipo, como por exemplo, carros, comidas,etc.
+        // Já os objetos são blocos de dados que juntos formam uma informaçao, pode possui classe, atributo e metodo.
+        // Os atributos são identificados com uma chave e um 
+        // valor. Os objetos se diferem das arrays quando observamos o agrupamento dos dados,
+        // os itens de uma array não tem relações diretas (exceto as posições), já nos objetos,
+        // cada atributo faz parte do objeto e depende da sua existência para fazer sentido 
+        // como informação.
+
+        2- 
+            // function criarRetangulo(lado1, lado2){
+            // let retangulo = {
+            // lado1: (base),
+            // lado2: (altura),
+            // perimetro: (lado1+lado2)*2,
+            // area: (lado1*lado2)
+            //  }
+            // console.log(retangulo)
+            //     }
+            // criarRetangulo(4, 5)
+
+    3-  
+        const filme = {
+        titulo: "Guardians of the Galaxy Vol. 2",
+        ano: 2017,
+        diretor: "James Gunn",
+        elenco: ["Chris Pratt", "Zoë Saldaña", "Dave Batista", "Vin Diesel","Bradley Cooper", "Michael Rooker","Karen Gillan","Pom Klementieff,"Elizabeth Debicki"]
+        }
+        let arrayElenco = []
+        for (let nome of filme.elenco){
+        arrayElenco += nome + ", "
+        }
+        console.log(`Venha assistir ao filme ${filme.titulo}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${arrayElenco}`)
+    
+    
+        4- 
+            let pessoa = {
+            nome: "Juan Albuquerque", 
+            idade: 28,
+            email: "email@emai.com",
+            endereco: "p sherman, 42,wallaby way sydney"
+            }
+            function anonimizarPessoa(objeto){
+            let anonimo = {
+                ...pessoa,
+            nome: "ANONIMO"
+            }
+            console.log(anonimo) 
+            }
+            anonimizarPessoa(pessoa)
+            */
+
+/*
+
+*/
+/*
+
+*/
+/*
+
+*/
+/*
+
+*/
+/*
+
+*/
