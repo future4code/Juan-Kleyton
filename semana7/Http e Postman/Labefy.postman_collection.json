@@ -42,11 +42,11 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": ""
+						"value": "juan-albuquerque-jackson"
 					}
 				],
 				"url": {
-					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/search?name=string",
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/search?name=MPB",
 					"protocol": "https",
 					"host": [
 						"us-central1-labenu-apis",
@@ -61,7 +61,7 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "string"
+							"value": "MPB"
 						}
 					]
 				},
@@ -97,7 +97,7 @@
 					"variable": [
 						{
 							"key": "playlistId",
-							"value": "54372d45-b954-40a7-89f7-bff4b2f81625"
+							"value": "0f09b18b-e7ce-43ff-9397-4ecc9344e0af"
 						}
 					]
 				},
@@ -115,13 +115,13 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "juan-albuquerque-jackon",
+						"value": "juan-albuquerque-jackson",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"Indie\"\n}",
+					"raw": "{\n\t\"name\": \"K-pop\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -201,7 +201,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"Apenas um rapaz Latino Americano  \",\n\t\"artist\": \"Belchior\",\n\t\"url\": \"https://youtu.be/p_xDKUQJlfM\"\n}",
+					"raw": "{\n\t\"name\": \"DNA  \",\n\t\"artist\": \"BTS\",\n\t\"url\": \"https://youtu.be/MBdVXkSdhwU\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -225,7 +225,7 @@
 					"variable": [
 						{
 							"key": "playlistId",
-							"value": "54372d45-b954-40a7-89f7-bff4b2f81625",
+							"value": "9cbca1ad-df00-4f58-b95f-559b0ccb75c9",
 							"type": "text",
 							"enabled": true
 						}
@@ -243,7 +243,7 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": ""
+						"value": "juan-albuquerque-jackson"
 					}
 				],
 				"url": {
@@ -262,7 +262,7 @@
 					"variable": [
 						{
 							"key": "playlistId",
-							"value": "247e3159-ac9f-491e-8eac-3ee4027681d8"
+							"value": "21cffb4f-7848-403d-96fb-b3c614ffe9f2"
 						}
 					]
 				},
@@ -278,7 +278,7 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": ""
+						"value": "juan-albuquerque-jackson"
 					}
 				],
 				"url": {
@@ -299,11 +299,11 @@
 					"variable": [
 						{
 							"key": "playlistId",
-							"value": ""
+							"value": "ff4fbc5b-6222-491b-8649-9e4caec415b2"
 						},
 						{
 							"key": "trackId",
-							"value": ""
+							"value": "319e8ba3-058b-47fa-bbc4-9a63594029a2"
 						}
 					]
 				},
