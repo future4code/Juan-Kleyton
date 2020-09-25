@@ -1,25 +1,67 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react';
 import './App.css';
+import { MainContainer, HeaderContainer} from './styles';
+import WeekTasks from './Components/WeekTasks/WeekTasks';
+import TaskForm from './Components/TaskForm/TaskForm';
+import useForm from './Hooks/useForm'
+import axios from 'axios'
 
 function App() {
+  const [tasks, setTasks] = useState([])
+  const {form, onChange, resetForm} = useForm({text: "", day: ""})
+    const baseUrl= "https://us-central1-labenu-apis.cloudfunctions.net/generic/planner-jackson-juan-kleyton"
+    const handleInputChange = event => {
+        const {name, value} = event.target
+        onChange(name, value)
+    }
+    const getTasks = () => {
+      axios.get(baseUrl)
+      .then((response) => {
+        setTasks(response.data)
+      })
+    }
+    useEffect(() => {
+      getTasks()
+    }, [])
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault()
+        const body = {
+            text: form.text,
+            day: form.day
+        }
+        
+        axios.post(baseUrl, body)
+          .then(() => {
+            alert("Tarefa Criada com sucesso")
+            resetForm()
+            getTasks()
+        })
+    }
+
+    const handleDelete = (taskId) => {
+      if(window.confirm("Tem certeza que deseja excluir esta tarefa?")){
+        axios.delete(`${baseUrl}/${taskId}`)
+        .then(() => {
+          getTasks()
+        })
+    }}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainContainer>
+      <HeaderContainer>
+        <h1>Planner</h1>
+      </HeaderContainer>
+      <TaskForm 
+      form={form}
+      handleFormSubmit={handleFormSubmit}
+      handleInputChange={handleInputChange}
+      />
+      <WeekTasks 
+      tasks={tasks}
+      handleDelete={handleDelete}
+      />
+    </MainContainer>
   );
 }
 
