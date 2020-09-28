@@ -1,0 +1,2 @@
+export const logo = "https://img2.gratispng.com/20181028/qgg/kisspng-logo-clip-art-brand-rocket-design-logo-rocket-favicon-red-smmrocket-5bd5e2b163bca3.1057059415407438574085.jpg"
+export const baseUrlAPI ="https://us-central1-labenu-apis.cloudfunctions.net/labeX/juan-kleyton-jackson"
