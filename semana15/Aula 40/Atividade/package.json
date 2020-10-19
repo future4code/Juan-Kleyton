@@ -1,0 +1,15 @@
+{
+  "name": "node-package-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js",
+    "start-jao": "node index.js 'João' 23",
+    "search-country-by-continent": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
