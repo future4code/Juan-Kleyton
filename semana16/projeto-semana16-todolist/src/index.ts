@@ -2,6 +2,9 @@ import express from "express";
 import knex from "knex";
 import dotenv from "dotenv";
 import createUsers from "./endpoints/createUsers"
+import editeUser from "./endpoints/editUser"
+import createTask from "./endpoints/createTask"
+import getTaskById from "./endpoints/getTaskById";
 
 
 dotenv.config();
@@ -22,6 +25,9 @@ app.use(express.json());
 
 app.put('/user', createUsers)
 app.get('/user/:id, getUserById')
+app.post('/user/edit/:id', editeUser)
+app.put('/task', createTask)
+app.get('/task/:id', getTaskById)
 
 app.listen( 3003, () => {
    

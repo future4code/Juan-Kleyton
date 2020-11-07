@@ -13,6 +13,7 @@ export default async function getuserById(
             res.status(400).send({
                 message: "Usuário não encontrado"
             })
+            return
         }
 
         res.status(200).send({
