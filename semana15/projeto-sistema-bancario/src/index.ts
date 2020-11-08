@@ -10,13 +10,25 @@ app.use(express.json)
    app.post("/users/create", (req:Request,res:Response) =>{
 
     try{
-        //validar as entradas de requisição
-        // consultar ou alterar a base dados
-         const {name,CPF,dateOfBirthAsString} = req.body
+        const {name,CPF,dateOfBirthAsString} = req.body
 
          const [day,month, year] = dateOfBirthAsString.split("/")
 
          const dateOfBirth: Date = new Date(`${year}-${month}-${day}`)
+        //validar as entradas de requisição
+        const ageInMilisseconds: number = Date.now() - dateOfBirth.getTime()
+
+
+        const ageInYears : number = ageInMilisseconds /100 /60/60/24/365
+
+        if(ageInYears <18){
+            res.statusCode = 406
+            throw  new Error ("Idade deve ser maior que 18 anos")
+        }
+
+
+        // consultar ou alterar a base dados
+         
 
          accounts.push({
              name,
@@ -28,14 +40,27 @@ app.use(express.json)
         // validar os resultados da consulta
         // enviar as resposta
 
-        res.status(201).send("Account Send of Sucess")
+        res.status(201).send("Account create of sucess")
     } catch(error){
-        res.status(400).send(error.message)
         console.log(error)
+        res.send(error.message)
     }
 
    })
+   app.get("/users/all", (req:Request, res: Response)=>{
+       try {
+           if(!accounts.length){
+               res.statusCode = 404
+               throw new Error("Nenhuma conta encontrada")
+               
+           }
 
+
+           res.status(200).send(accounts)
+       } catch (error) {
+           res.send(error.message)
+       }
+   })
    app.listen(3003,()=>{
     console.log("Server is running in port 3003")
 })
