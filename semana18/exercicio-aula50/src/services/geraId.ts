@@ -1,5 +1,5 @@
 import { v4 } from "uuid";
 
-export function generateId(): string {
+export default function geraId(): string {
     return v4();
   }
