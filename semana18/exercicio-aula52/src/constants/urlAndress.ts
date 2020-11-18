@@ -1,0 +1,1 @@
+export const urlAddress = "https://viacep.com.br/ws"
